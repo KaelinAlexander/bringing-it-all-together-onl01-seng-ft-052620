@@ -4,7 +4,7 @@ attr_accessor :name, :breed, :id
   def initialize(attr)
     @name = attr[:name]
     @breed = attr[:breed]
-    if @id
+    if attr[:id]
       @id = attr[:id]
     else
       @id = nil
