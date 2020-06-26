@@ -3,6 +3,6 @@ attr_accessor :name, :breed
 
 def initialize(attr)
   @name = [:name]
-  @breed = [:name]
+  @breed = [:breed]
 
 end
