@@ -74,7 +74,7 @@ attr_accessor :name, :breed, :id
       dog_data = dog[0]
       new_dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
     else
-      dog = self.create(name: name, breed: bree)
+      dog = self.create(name: name, breed: breed)
     end
   end
 
