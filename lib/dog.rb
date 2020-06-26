@@ -66,6 +66,7 @@ attr_accessor :name, :breed, :id
     sql = "SELECT * FROM dogs WHERE name = ?"
     result = DB[:conn].execute(sql, name)[0]
     Dog.new(id: result[0], name: result[1], breed: result[2])
+  end
 
   def self.find_or_create_by(name)
 
