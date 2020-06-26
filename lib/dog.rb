@@ -44,7 +44,7 @@ attr_accessor :name, :breed, :id
       INSERT INTO dogs (name, album)
       VALUES (?, ?)
       SQL
-      new_dog = DB[:conn].execute(sql, self.name, self.breed)
+      DB[:conn].execute(sql, self.name, self.breed)
       self.id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
       new_dog
     end
