@@ -24,5 +24,5 @@ attr_accessor :name, :breed, :id
   end
 
   def self.new_from_db
-  
+
 end
