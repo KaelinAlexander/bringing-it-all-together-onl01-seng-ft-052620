@@ -2,8 +2,8 @@ class Dog
 attr_accessor :name, :breed
 
   def initialize(attr)
-    @name = [:name]
-    @breed = [:breed]
+    @name = attr[:name]
+    @breed = attr[:breed]
   end
 
 end
