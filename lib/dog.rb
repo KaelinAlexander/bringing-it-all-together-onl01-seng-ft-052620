@@ -17,4 +17,12 @@ attr_accessor :name, :breed, :id
 
   def save
 
+  end
+
+  def self.create
+
+  end
+
+  def self.new_from_db
+  
 end
