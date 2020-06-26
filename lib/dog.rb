@@ -4,7 +4,10 @@ attr_accessor :name, :breed, :id
   def initialize(attr)
     @name = attr[:name]
     @breed = attr[:breed]
-    @id = nil
+    if @id
+      @id = attr[:id]
+    else
+      @id = nil
   end
 
   def self.create_table
