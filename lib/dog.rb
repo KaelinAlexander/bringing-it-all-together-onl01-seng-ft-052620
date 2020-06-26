@@ -45,7 +45,7 @@ attr_accessor :name, :breed, :id
       VALUES (?, ?)
       SQL
       new_dog = DB[:conn].execute(sql, self.name, self.breed)
-      @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
+      ne_dog.id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
       self
     end
   end
