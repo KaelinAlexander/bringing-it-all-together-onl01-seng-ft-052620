@@ -41,8 +41,10 @@ attr_accessor :name, :breed, :id
       self.update
     else
       sql = <<-SQL
-      INSERT INTO songs (name, album)
+      INSERT INTO dogs (name, album)
       VALUES (?, ?)
+      SQL
+      DB[:conn].execute(sql, self.name, self.breed)
     end
   end
 
