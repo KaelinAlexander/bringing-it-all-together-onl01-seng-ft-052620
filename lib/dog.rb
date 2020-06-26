@@ -50,8 +50,8 @@ attr_accessor :name, :breed, :id
     end
   end
 
-  def self.create(name:, breed:)
-
+  def self.create(name, breed)
+    new_dog = Dog.new(name: name, breed: breed)
   end
 
   def self.find_by_id(id)
