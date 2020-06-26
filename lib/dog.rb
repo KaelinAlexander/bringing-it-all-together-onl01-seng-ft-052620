@@ -7,4 +7,14 @@ attr_accessor :name, :breed, :id
     @id = nil
   end
 
+  def self.create_table
+
+  end
+
+  def self.drop_table
+
+  end
+
+  def save
+
 end
