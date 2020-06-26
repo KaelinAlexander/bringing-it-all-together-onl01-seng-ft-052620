@@ -24,15 +24,15 @@ attr_accessor :name, :breed, :id
     DB[:conn].execute(sql)
   end
 
+  def self.new_from_db
+
+  end
+
   def save
 
   end
 
   def self.create
-
-  end
-
-  def self.new_from_db
 
   end
 
