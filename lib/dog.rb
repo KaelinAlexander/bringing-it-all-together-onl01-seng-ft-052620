@@ -8,6 +8,7 @@ attr_accessor :name, :breed, :id
       @id = attr[:id]
     else
       @id = nil
+    end
   end
 
   def self.create_table
