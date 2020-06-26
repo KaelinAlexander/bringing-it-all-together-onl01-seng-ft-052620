@@ -30,5 +30,5 @@ attr_accessor :name, :breed, :id
   def self.find_by_id(id)
 
   end
-  
+
 end
