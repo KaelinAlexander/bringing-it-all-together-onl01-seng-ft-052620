@@ -37,7 +37,13 @@ attr_accessor :name, :breed, :id
   end
 
   def save
-
+    if self.id
+      self.update
+    else
+      sql = <<-SQL
+      INSERT INTO songs (name, album)
+      VALUES (?, ?)
+    end
   end
 
   def self.create
