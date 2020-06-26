@@ -50,8 +50,8 @@ attr_accessor :name, :breed, :id
     end
   end
 
-  def self.create(name, breed)
-    new_dog = Dog.new(name: name, breed: breed)
+  def self.create(hash)
+    new_dog = Dog.new(name: hash[:name], breed: hash[:breed])
     new_dog.save
     new_dog
   end
