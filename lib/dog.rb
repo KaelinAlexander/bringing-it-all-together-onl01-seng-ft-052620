@@ -76,7 +76,7 @@ attr_accessor :name, :breed, :id
     else
       dog = self.create(name: name, breed: bree)
     end
-  end 
+  end
 
   def update
     sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
