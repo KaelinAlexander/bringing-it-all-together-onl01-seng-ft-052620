@@ -32,7 +32,7 @@ attr_accessor :name, :breed, :id
     name = row[1]
     breed = row[2]
     new_dog = self.new(name: name, breed: breed, id: id)
-
+    new_dog
   end
 
   def save
