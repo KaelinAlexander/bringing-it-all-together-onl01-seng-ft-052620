@@ -35,5 +35,8 @@ attr_accessor :name, :breed, :id
 
   end
 
+  def update
+
+  end
 
 end
