@@ -73,9 +73,10 @@ attr_accessor :name, :breed, :id
     if !dog.empty?
       dog_data = dog[0]
       new_dog = Dog.new(dog_data[0], dog_data[1], dog_data[2])
-
-
-  end
+    else
+      dog = self.create(name: name, breed: bree)
+    end
+  end 
 
   def update
     sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
